@@ -1,0 +1,72 @@
+<!-- Мельников Артем, 10 группа -->
+<!-- 10 лабараторная. Сделать анимацию 2D -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <title>Cat 2D</title>
+</head>
+
+<body>
+  <div class="cat">
+
+    <audio id="mur">
+      <source src="mur.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="left-ear"></div>
+
+    <div class="right-ear"></div>
+
+    <div class="head">
+      <div class="eye left-eye">
+        <span></span>
+      </div>
+
+      <div class="eye right-eye">
+        <span></span>
+      </div>
+
+      <div class="eye-cover left-eye-cover"></div>
+
+      <div class="eye-cover right-eye-cover"></div>
+
+      <div class="nose">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mouth">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="whisker left-whisker">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="whisker right-whisker">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var audio = $("#mur")[0];
+    $(".cat").mouseenter(function () {
+      audio.play();
+    })
+  </script>
+</body>
+
+</html>
